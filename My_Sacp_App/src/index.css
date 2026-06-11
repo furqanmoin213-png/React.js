@@ -153,3 +153,13 @@ h1 { font-size: 2rem; margin: 0 0 0.4rem 0; font-weight: 700; color: #0f172a; }
   .visual-column { display: none; }
   .form-column { padding: 2rem; }
 }
+@media (max-width: 480px) {
+  .form-column { padding: 1.5rem; }
+  .form-content-wrapper { max-width: 100%; }
+  h1 { font-size: 1.5rem; }
+}/*for mobile, we keep the form full width and reduce padding for better use of limited screen space
+*/
+@media (max-width: 300px)
+{
+  
+}
