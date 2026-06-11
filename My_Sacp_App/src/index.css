@@ -135,6 +135,9 @@ h1 { font-size: 1.8rem; margin: 0 0 0.4rem 0; font-weight: 700; color: #0f172a; 
 
 /* --- Desktop & Laptop Monitor Enhancements --- */
 @media (min-width: 1024px) {
+  .main-graphic img {
+    object-fit: contain; /* Shows full image without cropping on larger screens */
+  }
   .app-container {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
