@@ -1,9 +1,8 @@
-import Login from "./components/LoginPages/Login"
-
+import Auth from './components/Auth'
 const App = () => {
   return (
-    <div className="h-full w-full bg-Page-background">
-      <Login/>
+    <div>
+      <Auth/>
     </div>
   )
 }
