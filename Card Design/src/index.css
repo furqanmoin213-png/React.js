@@ -1,0 +1,204 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica";
+}
+body{
+  background-color: #fff;
+  min-height: 100vh;
+  width: 100%;
+ 
+
+}
+.parent{
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+  padding: 30px;
+  border-radius: 10px;
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+
+  
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 550px;
+
+  min-width: 400px;
+  width: min-content;   /* card grows based on content */
+
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(48, 30, 30, 0.2);
+}
+.top h3{
+  color: #02022f;
+  font-size: 1.4rem;
+  position:absolute;
+  padding: 20px;
+  right: 0px;
+  top: 10px;
+}
+.top button{
+  padding: 5px 16px;
+  font-size: 1rem;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  background-color: rgb(8, 199, 91);
+  color: white;
+  position:absolute;
+  left: 20px;
+  top: 30px;
+}
+.top button:hover{
+  outline: none;
+  cursor: pointer;
+  background-color: #0fc45d;
+  box-shadow: 0px 3px 5px #08c932;
+
+
+}
+.top{
+  position: relative;
+}
+.top div{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.top img{
+  margin-top: 20px;
+  height: 180px;
+  width: 180px;
+  border: none;
+  object-fit:fill;
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px rgba(48, 30, 30, 0.3);
+
+}
+.top div h1{
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #02022f;
+}
+.top div h4{
+    color: #c2c2f0;
+
+}
+.top div .Job{
+  margin-top: -10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  color: rgb(11, 180, 180);
+  
+}
+.top div .Job span{
+  font-weight: 500;
+  text-shadow: 0px 0px 2px rgb(11, 180, 180);
+}
+.center{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.center .buttons{
+  display: flex;
+  flex-wrap: nowrap;      /* prevent next line */
+  justify-content: center;
+  gap: 10px;
+  padding: 40px;
+}
+.center .buttons > *{
+  flex-shrink: 0;         /* don't shrink buttons */
+}
+
+.center .buttons .button,
+.center .buttons .number-button{
+  white-space: nowrap;    /* keep text in one line */
+}
+.center .buttons .number-button{
+  font-size: 1rem;
+  border: none;
+  outline: none;
+box-shadow: 0px 3px 5px #3fb7eb;
+
+  padding: 8px 20px;
+  border-radius: 100px;
+  background-color: transparent;
+  font-weight: 700;
+  color: #02022f;
+  background-color: #6cd2fd;
+}
+.center .buttons .button{
+  font-size: 1rem;
+  border: 0.4px solid #a2a2f6;
+  outline: none;
+  padding: 8px 20px;
+  border-radius: 100px;
+  background-color: transparent;
+  font-weight: 700;
+  color: #02022f;
+
+}
+.center .buttons .button:hover{
+outline: none;
+border: none;
+cursor: pointer;
+background-color: #6cd2fd;
+box-shadow: 0px 3px 5px #3fb7eb;
+  color: #fff;
+
+
+}
+.center p{
+ 
+  text-align: center;
+  color: #c2c2f0;
+  font-weight: 700;
+  text-shadow: 0px 0px 2px rgb(201, 245, 245);
+  margin-bottom: 30px;
+  
+}
+
+.bottom {
+  display: flex;
+  font-size: 1rem;
+  color: #02022f;
+  justify-content: center;
+  padding: 20px;
+  border-top: 1px solid rgb(240, 217, 217);
+  align-items: center;
+
+}
+.bottom:hover{
+  outline: none;
+border: none;
+cursor: pointer;
+background-color: #6cd2fd;
+box-shadow: 0px 3px 5px #3fb7eb;
+  color: #fff;
+
+}
+.center .buttons .button,
+.center .buttons .number-button{
+  white-space: nowrap;
+}
+
+.center .buttons{
+  min-height: 80px;
+  
+}
