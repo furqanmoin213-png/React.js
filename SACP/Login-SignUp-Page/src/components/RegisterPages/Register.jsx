@@ -1,13 +1,11 @@
 import LeftContent from "../Shared/LeftContent";
-import RightLoginContent from "./RightLoginContent";
+import RightRegisterContent from "./RightRegisterContent";
 
-export default function Login({ onNavigate }) {
-  
+export default function Register({ onNavigate }) {
   return (
-    
     <div className="grid grid-cols-1 lg:grid-cols-[40%_1fr] min-h-screen w-full">
       <LeftContent /> 
-      <RightLoginContent onNavigate={onNavigate} />
+      <RightRegisterContent onNavigate={onNavigate} />
     </div>
   );
 }
