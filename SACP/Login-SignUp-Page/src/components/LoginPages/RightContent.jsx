@@ -9,7 +9,7 @@ const RightContent = () => {
   const form = useForm();
   const {register, handleSubmit} = form
   return (
-<div className="w-full h-screen ">
+<div className="w-full h-screen lg:grid-cols-1">
 <RightHeader/>
 
 <div className="w-full  h-[90%] flex justify-center items-center font-login-page">
