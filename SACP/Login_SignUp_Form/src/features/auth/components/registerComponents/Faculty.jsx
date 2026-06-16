@@ -1,9 +1,9 @@
 import InputField from "../../../../shared/components/InputField"
-
+import {motion} from "framer-motion"
 const Faculty = ({register}) => {
   return (
     <div className="flex flex-col gap-5">
-     <div className="flex flex-col gap-5 w-full ">
+     <div className="flex flex-col gap-5 w-full md:flex-row">
 
         <InputField
             label={"Username"}
@@ -23,12 +23,15 @@ const Faculty = ({register}) => {
         />
         </div>
         
-        <div className="flex flex-col gap-5 w-full ">
-       <div className="w-full flex flex-col gap-3">
+        <div className="flex flex-col gap-5 w-full md:flex-row ">
+       <motion.div className="w-full flex flex-col gap-3 p-1 "
+          initial={{ opacity: 0, y: 15 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeIn" }}>
 
         <label for="department">Department</label>
   
-    <select id="department" name="department"               className=" px-4 py-4 border border-input-border text-gray-400 "
+    <select id="department" name="department"               className=" px-4 py-4 border border-input-border focus:ring-2  focus:ring-blue-800 foucs:border-blue-800 outline-none  text-gray-400 "
 
 >
       <option value="" disabled selected>Select Department</option>
@@ -36,7 +39,7 @@ const Faculty = ({register}) => {
       <option value="engineering">Engineering</option>
       <option value="marketing">Marketing</option>
     </select>
-    </div>
+    </motion.div>
         <InputField
             label={"Role Title"}
             placeholder={"e.g. Associate Professor"}
@@ -57,7 +60,7 @@ const Faculty = ({register}) => {
             register={register}
         />
         
-        <div className="flex flex-col gap-5 w-full ">
+        <div className="flex flex-col gap-5 w-full md:flex-row">
         <InputField
             label={"Password"}
             placeholder={"**********"}

@@ -29,7 +29,7 @@ const Admin = ({register}) => {
             register={register}
         />
         
-        <div className="flex flex-col gap-5 w-full ">
+        <div className="flex flex-col gap-5 w-full md:flex-row">
         <InputField
             label={"Password"}
             placeholder={"**********"}

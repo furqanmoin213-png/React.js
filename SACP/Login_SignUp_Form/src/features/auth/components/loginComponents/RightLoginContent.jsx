@@ -3,24 +3,19 @@ import { useForm } from "react-hook-form";
 import InputField from "../../../../shared/components/InputField";
 import Button from "../../../../shared/components/Button";
 
-
 const RightLoginContent = ({ onNavigate }) => {
   const { register, handleSubmit } = useForm();
-
-  // FUNCTION-RUN-GENERATED-CODE-START:onSubmit
-  (async () => { console.log(await onSubmit(/* OpenAI API key not provided */)); })();
-  // FUNCTION-RUN-GENERATED-CODE-END:onSubmit
 
   const onSubmit = (data) => {
     console.log("Logged in with:", data);
   };
 
   return (
-    <div className="w-full min-h-screen flex flex-col">
+    <div className="w-full h-screen flex flex-col bg-Page-background">
       <FormHeader />
 
-      <div className=" h-screen flex flex-1 justify-center items-center font-login-page bg-Page-background">
-        <div className="w-full px-6 max-w-md ">
+      <div className="flex flex-1 justify-center items-center font-login-page py-10">
+        <div className="w-full px-6 max-w-md">
           <h1 className="text-4xl md:text-5xl text-Login-Heading mb-2 font-bold leading-tight">
             Welcome
           </h1>
@@ -51,21 +46,22 @@ const RightLoginContent = ({ onNavigate }) => {
 
             <Button label="Login" />
           </form>
+
           <div className="flex justify-center items-center gap-2 mt-7 md:mt-10">
-            <p className="text-center text-Login-Text text-sm ">
+            <p className="text-center text-Login-Text text-sm">
               Don't have an account?
             </p>
             <p
               onClick={onNavigate}
-              className="text-Login-Register-Link font-semibold  cursor-pointer hover:underline hover:font-bold hover:text-blue-600"
+              className="text-Login-Register-Link font-semibold cursor-pointer hover:underline hover:text-blue-600 transition-colors duration-200"
             >
               Register here
             </p>
           </div>
         </div>
       </div>
-      </div>
+    </div>
   );
 };
 
-export default RightLoginContent
+export default RightLoginContent;

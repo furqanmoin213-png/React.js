@@ -1,15 +1,47 @@
-import ImageContainer from "../../../../shared/components/ImageContainer"
-import RightLoginContent from "./RightLoginContent"
+import { motion } from "framer-motion";
+import ImageContainer from "../../../../shared/components/ImageContainer";
+import RightLoginContent from "./RightLoginContent";
 
-const Login = ({onNavigate}) => {
+const Login = ({ onNavigate }) => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariantsLeft = {
+    hidden: { opacity: 0, x: -30 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
+
+  const itemVariantsRight = {
+    hidden: { opacity: 0, x: 30 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
+
   return (
-    <div>
-         <div className="grid grid-cols-1 lg:grid-cols-[40%_1fr] w-full h-screen ">
-      <ImageContainer /> 
-      <RightLoginContent onNavigate={onNavigate} />
-    </div>
-    </div>
-  )
-}
+    <motion.div 
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      className="grid grid-cols-1 lg:grid-cols-[40%_1fr] w-full max-h-screen overflow-x-hidden bg-Page-background"
+    >
+      {/* Left side Graphic Image Wrapper */}
+      <motion.div variants={itemVariantsLeft} className="w-full h-full hidden lg:flex items-center justify-center">
+        <ImageContainer /> 
+      </motion.div>
 
-export default Login
+      {/* Right side Login Content Form Wrapper */}
+      <motion.div variants={itemVariantsRight} className="w-full h-full flex flex-col">
+        <RightLoginContent onNavigate={onNavigate} />
+      </motion.div>
+    </motion.div>
+  );
+};
+
+export default Login;
