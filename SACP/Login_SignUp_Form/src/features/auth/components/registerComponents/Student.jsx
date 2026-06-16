@@ -11,12 +11,12 @@ const Student = ({register}) => {
             type={"text"}
             register={register}
         />
-        <div className="flex flex-row gap-5 w-full ">
+        <div className="flex flex-col gap-5 w-full ">
         <div className="w-full flex flex-col gap-3">
 
         <label for="department">Degree/Certificate</label>
   
-    <select id="degree" name="degree"               className="w-full px-4 py-4 border border-input-border text-gray-900"
+    <select id="degree" name="degree"               className="focus:ring-3 focus:ring-blue-800 foucs:border-blue-800 outline-none px-4 py-4 border border-input-border text-gray-400"
 >
       <option value="" disabled selected>Select Degree/Certificate</option>
       <option value="BS"></option>
@@ -42,7 +42,7 @@ const Student = ({register}) => {
             register={register}
         />
         
-        <div className="flex flex-row gap-5 w-full ">
+        <div className="flex flex-col gap-5 w-full ">
         <InputField
             label={"Password"}
             placeholder={"**********"}

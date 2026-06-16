@@ -3,7 +3,7 @@ import InputField from "../../../../shared/components/InputField"
 const Faculty = ({register}) => {
   return (
     <div className="flex flex-col gap-5">
-     <div className="flex flex-row gap-5 w-full ">
+     <div className="flex flex-col gap-5 w-full ">
 
         <InputField
             label={"Username"}
@@ -23,15 +23,16 @@ const Faculty = ({register}) => {
         />
         </div>
         
-        <div className="flex flex-row gap-5 w-full ">
+        <div className="flex flex-col gap-5 w-full ">
        <div className="w-full flex flex-col gap-3">
 
         <label for="department">Department</label>
   
-    <select id="department" name="department"               className="w-full px-4 py-4 border border-input-border text-gray-900"
+    <select id="department" name="department"               className=" px-4 py-4 border border-input-border text-gray-400 "
+
 >
       <option value="" disabled selected>Select Department</option>
-      <option value="hr">Human Resources</option>
+      <option value="hr" className="selection:bg-gray-100 hover:cursor-pointer ">Human Resources</option>
       <option value="engineering">Engineering</option>
       <option value="marketing">Marketing</option>
     </select>
@@ -56,7 +57,7 @@ const Faculty = ({register}) => {
             register={register}
         />
         
-        <div className="flex flex-row gap-5 w-full ">
+        <div className="flex flex-col gap-5 w-full ">
         <InputField
             label={"Password"}
             placeholder={"**********"}

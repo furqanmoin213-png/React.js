@@ -12,7 +12,7 @@ const InputFields = ({ label, id, name, type, placeholder, register, text }) => 
               name={name}
               placeholder={placeholder}
               {...register(name, { required: true })} 
-              className="w-full px-4 py-4 border border-input-border text-gray-900"
+              className="focus:ring-3 focus:ring-blue-800 foucs:border-blue-800 outline-none w-full px-4 py-4 border border-input-border text-gray-900"
             />
     </div>
   )
