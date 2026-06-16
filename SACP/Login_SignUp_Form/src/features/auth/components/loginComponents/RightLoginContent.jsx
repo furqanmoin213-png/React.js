@@ -18,8 +18,9 @@ const RightLoginContent = ({ onNavigate }) => {
   return (
     <div className="w-full min-h-screen flex flex-col">
       <FormHeader />
-      <div className="mh-screen w-full flex flex-1 justify-center items-center font-login-page">
-        <div className="w-full max-w-md">
+
+      <div className=" h-screen flex flex-1 justify-center items-center font-login-page">
+        <div className="w-full p-6 max-w-md ">
           <h1 className="text-4xl md:text-5xl text-Login-Heading mb-2 font-bold leading-tight">
             Welcome
           </h1>
@@ -63,7 +64,7 @@ const RightLoginContent = ({ onNavigate }) => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
   );
 };
 
