@@ -19,7 +19,7 @@ const RightLoginContent = ({ onNavigate }) => {
     <div className="w-full min-h-screen flex flex-col">
       <FormHeader />
 
-      <div className=" h-screen flex flex-1 justify-center items-center font-login-page">
+      <div className=" h-screen flex flex-1 justify-center items-center font-login-page bg-Page-background">
         <div className="w-full p-6 max-w-md ">
           <h1 className="text-4xl md:text-5xl text-Login-Heading mb-2 font-bold leading-tight">
             Welcome
