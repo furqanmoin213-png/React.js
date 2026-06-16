@@ -25,7 +25,7 @@ const RightLoginContent = ({ onNavigate }) => {
             Welcome
           </h1>
           <p className="text-base md:text-xl text-Login-Text mb-6">
-            Log in to your academic workspace
+            Login to your academic workspace
           </p>
 
           <form
@@ -51,7 +51,7 @@ const RightLoginContent = ({ onNavigate }) => {
 
             <Button label="Login" />
           </form>
-          <div className="flex justify-center items-center gap-2 mt-3 md:mt-10">
+          <div className="flex justify-center items-center gap-2 mt-7 md:mt-10">
             <p className="text-center text-Login-Text text-sm ">
               Don't have an account?
             </p>
