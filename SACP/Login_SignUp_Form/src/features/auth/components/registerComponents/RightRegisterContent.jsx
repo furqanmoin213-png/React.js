@@ -162,7 +162,7 @@ const RightRegisterContent = ({ onNavigate }) => {
           <p className="text-center mt-10 text-Login-Text text-sm">
             Already have an account?
             <span onClick={onNavigate} className="text-Login-Register-Link font-semibold ml-1 cursor-pointer hover:underline">
-              Log in here
+              Login here
             </span>
           </p>
         </div>
