@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+@theme{
+    /*in start of everything there should be the property name like --color- */
+  /* 1. Single custom color */
+  --color-Page-background: #F8FAFC;
+ --color-Login-Heading: #0B1C30;
+ --color-Login-Text: #43474E;
+ --color-Login-Button: #1A365D;
+  --color-Login-Forgot-Password: #0061A5;
+  --color-Login-Register-Link: #0061A5;
+--color-input-border: #C4C6CF;
+--font-login-page: 'Hanken Grotesk', sans-serif;
+--color-role-box: #EFF4FF;
+--color-role-box-border: #C4C6CF;
+  /* 2. Color system / palette object */
+  
+}
