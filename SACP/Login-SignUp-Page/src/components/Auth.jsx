@@ -7,7 +7,7 @@ const Auth = () => {
   const [view, setView] = useState("login");
 
   return (
-    <div className="min-h-screen min-w-full bg-Page-background flex flex-col ">
+    <div className="min-h-screen min-w-full bg-Page-background">
       {view === "login" ? (
         <Login onNavigate={() => setView("register")} />
       ) : (

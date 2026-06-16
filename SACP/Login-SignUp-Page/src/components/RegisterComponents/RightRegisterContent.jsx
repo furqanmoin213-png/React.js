@@ -50,15 +50,15 @@ const RightRegisterContent = ({ onNavigate }) => {
   };
 
   return (
-    <div className="h-screen w-full flex flex-col lg:w-full">
+    <div className="min-h-screen w-full flex flex-col lg:w-full ">
 <RightHeader/>  
       <div className="w-full flex-1 flex justify-center items-center font-login-page">
         <div className="w-full max-w-150 p-3">
-          <h1 className="text-3xl md:text-[3.5rem] text-Login-Heading mb-2 font-bold leading-tight">
+          <h1 className="text-3xl md:text-4xl text-Login-Heading mb-2 font-bold leading-tight">
             Create an Account
           </h1> 
           
-          <p className="text-[0.6rem] md:text-[1.2rem] text-Login-Text mb-6 font-semibold">
+          <p className="text-sm md:text-xl text-Login-Text mb-6 font-semibold">
             Join the Smart Academic Communication Platform workspace.
           </p>
 
@@ -103,6 +103,7 @@ const RightRegisterContent = ({ onNavigate }) => {
           </p>
         </div>
       </div>
+      
     </div>
   );
 };

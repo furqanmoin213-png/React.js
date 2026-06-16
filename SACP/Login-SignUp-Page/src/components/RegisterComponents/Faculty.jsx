@@ -15,38 +15,44 @@ const Faculty = ({register}) => {
         />
         <InputFields
             label={"Email Address"}
-            placeholder={"admin@university.edu"}
+            placeholder={"academic@university.edu"}
             name={"admin email"}
-            id={"admin email"}
+            id={"admin-email"}
             type={"email"}
             register={register}
         />
         </div>
         
         <div className="flex flex-row gap-5 w-full ">
+       <div className="w-full flex flex-col gap-3">
+
+        <label for="department">Department</label>
+  
+    <select id="department" name="department"               className="w-full px-4 py-4 border border-input-border text-gray-900"
+>
+      <option value="" disabled selected>Select Department</option>
+      <option value="hr">Human Resources</option>
+      <option value="engineering">Engineering</option>
+      <option value="marketing">Marketing</option>
+    </select>
+    </div>
         <InputFields
-            label={"Password"}
-            placeholder={"**********"}
-            name={"password"}
-            id={"password"}
-            type={"password"}
-            register={register}
-        />
-        <InputFields
-            label={"Confirm Password"}
-            placeholder={"**********"}
-            name={"password"}
-            id={"password"}
-            type={"password"}
+            label={"Role Title"}
+            placeholder={"e.g. Associate Professor"}
+            name={"role-title"}
+            id={"role-title"}
+            type={"text"}
+            text={"(Optional)"}
             register={register}
         />
         </div>
         <InputFields
-            label={"Email Address"}
-            placeholder={"admin@university.edu"}
-            name={"admin email"}
-            id={"admin email"}
-            type={"email"}
+            label={"Access Code"}
+            placeholder={"Enter alphanumeric code"}
+            name={"access code"}
+            id={"access-code"}
+            type={"text"}
+            text={"(Given by Admin)"}
             register={register}
         />
         
@@ -69,6 +75,7 @@ const Faculty = ({register}) => {
         />
         </div>
     </div>
+    
   )
 }
 

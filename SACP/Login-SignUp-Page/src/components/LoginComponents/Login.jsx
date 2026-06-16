@@ -5,7 +5,7 @@ export default function Login({ onNavigate }) {
   
   return (
     
-    <div className="grid grid-cols-1 lg:grid-cols-[40%_1fr] h-screen w-full">
+    <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2 w-full">
       <LeftContent /> 
       <RightLoginContent onNavigate={onNavigate} />
     </div>
