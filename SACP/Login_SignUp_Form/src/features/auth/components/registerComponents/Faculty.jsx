@@ -1,5 +1,6 @@
 import InputField from "../../../../shared/components/InputField"
 import {motion} from "framer-motion"
+import PasswordInput from "../../../../shared/components/PasswordInput";
 const Faculty = ({register}) => {
   return (
     <div className="flex flex-col gap-5">
@@ -61,20 +62,13 @@ const Faculty = ({register}) => {
         />
         
         <div className="flex flex-col gap-5 w-full md:flex-row">
-        <InputField
-            label={"Password"}
-            placeholder={"**********"}
-            name={"password"}
-            id={"password"}
-            type={"password"}
-            register={register}
-        />
-        <InputField
+        <PasswordInput
+              label="Password"
+              register={register}
+            />
+        <PasswordInput
             label={"Confirm Password"}
-            placeholder={"**********"}
-            name={"password"}
-            id={"password"}
-            type={"password"}
+            
             register={register}
         />
         </div>

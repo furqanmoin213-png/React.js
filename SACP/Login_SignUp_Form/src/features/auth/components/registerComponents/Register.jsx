@@ -30,15 +30,15 @@ export default function Register({ onNavigate }) {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="grid grid-cols-1 lg:grid-cols-[60%_1fr] min-h-screen w-full place-items-center overflow-x-hidden"
+      className="grid grid-cols-1 lg:grid-cols-[60%_1fr] w-full max-h-screen place-items-center display-grid"
     >
       {/* 2. Form panel wraps and slides smoothly in from the left */}
-      <motion.div variants={itemVariantsLeft} className="w-full h-full flex flex-col justify-center">
+      <motion.div variants={itemVariantsLeft} className=" h-full w-full display-full">
         <RightRegisterContent onNavigate={onNavigate} />
       </motion.div>
 
       {/* 3. Marketing Image wrapper smoothly glides in from the right */}
-      <motion.div variants={itemVariantsRight} className="w-full h-full hidden lg:block">
+      <motion.div variants={itemVariantsRight} className="w-full h-full justify-center hidden lg:block login-sidebar-image image2">
         <ImageContainer2 />
       </motion.div>
     </motion.div>

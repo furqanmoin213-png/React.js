@@ -1,5 +1,6 @@
 import InputField from "../../../../shared/components/InputField"
-import {motion} from 'framer-motion'
+import {motion} from 'framer-motion';
+import PasswordInput from "../../../../shared/components/PasswordInput";
 const Student = ({register}) => {
   return (
     <div className="flex flex-col gap-5">
@@ -21,7 +22,7 @@ const Student = ({register}) => {
   
     <select
   
-    id="degree" name="degree"               className="focus:ring-2  focus:ring-blue-800 foucs:border-blue-800 outline-none px-4 py-4 border border-input-border text-gray-400"
+    id="degree" name="degree"               className="outline-none px-4 py-4 border border-input-border text-gray-400"
 >
       <option value="" disabled selected>Select Degree/Certificate</option>
       <option value="BS"></option>
@@ -48,20 +49,13 @@ const Student = ({register}) => {
         />
         
         <div className="flex flex-col gap-5 w-full md:flex-row">
-        <InputField
-            label={"Password"}
-            placeholder={"**********"}
-            name={"password"}
-            id={"password"}
-            type={"password"}
-            register={register}
-        />
-        <InputField
+        <PasswordInput
+              label="Password"
+              register={register}
+            />
+        <PasswordInput
             label={"Confirm Password"}
-            placeholder={"**********"}
-            name={"password"}
-            id={"password"}
-            type={"password"}
+            
             register={register}
         />
         </div>

@@ -1,8 +1,9 @@
-import Auth from './components/Auth'
+import Input from "./components/Input"
+
 const App = () => {
   return (
     <div>
-      <Auth/>
+      <Input className={""}/>
     </div>
   )
 }

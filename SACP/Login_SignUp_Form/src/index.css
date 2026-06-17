@@ -7,7 +7,7 @@
  --color-Login-Heading: #0B1C30;
  --color-Login-Text: #43474E;
  --color-Login-Button: #1A365D;
-  --color-Login-Forgot-Password: #0061A5;
+ --color-Login-Forgot-Password: #0061A5;
   --color-Login-Register-Link: #0061A5;
 --color-input-border: #C4C6CF;
 --font-login-page: 'Hanken Grotesk', sans-serif;
@@ -15,4 +15,32 @@
 --color-role-box-border: #C4C6CF;
   /* 2. Color system / palette object */
   
+}
+@media (max-height: 900px) {
+  .image2{
+    min-height: 100%;
+  }
+
+}
+
+/* Hide the illustration when the viewport height is 600px or less */
+@media (max-height: 600px) {
+  .login-sidebar-image {
+    display: none !important;
+  }
+  
+  /* Optional: Ensure your main login form container expands 
+     to take up 100% width when the image is hidden */
+   .display-full {
+    width: 100%;
+  
+  } 
+  .display-grid{
+    grid-template-columns: 1fr;
+    
+  }
+  .Login-Form-Container{
+    padding: 20px;
+ 
+}
 }

@@ -29,15 +29,15 @@ const Login = ({ onNavigate }) => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="grid grid-cols-1 lg:grid-cols-[40%_1fr] w-full max-h-screen overflow-x-hidden bg-Page-background"
+      className="grid grid-cols-1 lg:grid-cols-[50%_1fr]  w-full overflow-x-hidden max-h-screen display-grid"
     >
       {/* Left side Graphic Image Wrapper */}
-      <motion.div variants={itemVariantsLeft} className="w-full h-full hidden lg:flex items-center justify-center">
+      <motion.div variants={itemVariantsLeft} className="w-full h-full hidden lg:block login-sidebar-image">
         <ImageContainer /> 
       </motion.div>
 
       {/* Right side Login Content Form Wrapper */}
-      <motion.div variants={itemVariantsRight} className="w-full h-full flex flex-col">
+      <motion.div variants={itemVariantsRight} className="w-full h-full display-full">
         <RightLoginContent onNavigate={onNavigate} />
       </motion.div>
     </motion.div>

@@ -2,6 +2,7 @@ import FormHeader from "../../../../shared/components/FormHeader";
 import { useForm } from "react-hook-form";
 import InputField from "../../../../shared/components/InputField";
 import Button from "../../../../shared/components/Button";
+import PasswordInput from "../../../../shared/components/PasswordInput";
 
 const RightLoginContent = ({ onNavigate }) => {
   const { register, handleSubmit } = useForm();
@@ -11,15 +12,15 @@ const RightLoginContent = ({ onNavigate }) => {
   };
 
   return (
-    <div className="w-full h-screen flex flex-col bg-Page-background">
+    <div className="h-screen flex flex-col flex-1">
       <FormHeader />
 
-      <div className="flex flex-1 justify-center items-center font-login-page py-10">
+      <div className="flex flex-1 justify-center items-center font-login-page Login-Form-Container">
         <div className="w-full px-6 max-w-md">
           <h1 className="text-4xl md:text-5xl text-Login-Heading mb-2 font-bold leading-tight">
             Welcome
           </h1>
-          <p className="text-base md:text-xl text-Login-Text mb-6">
+          <p className="text-base md:text-xl text-Login-Text">
             Login to your academic workspace
           </p>
 
@@ -35,13 +36,9 @@ const RightLoginContent = ({ onNavigate }) => {
               placeholder="student@university.edu"
               register={register}
             />
-            <InputField
-              label="Password"
-              id="password"
-              name="password"
-              type="password"
-              placeholder="************"
-              register={register}
+            <PasswordInput
+            label={"Password"}
+             register={register}
             />
 
             <Button label="Login" />

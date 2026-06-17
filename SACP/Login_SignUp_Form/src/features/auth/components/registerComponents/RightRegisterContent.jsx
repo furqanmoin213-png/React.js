@@ -82,11 +82,11 @@ const RightRegisterContent = ({ onNavigate }) => {
     <motion.div 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="min-h-screen w-full flex flex-col md:w-full"
+      className="min-h-screen w-full md:w-full flex flex-col "
     >
-      <FormHeader/>  
-      <div className="h-screen w-full flex-1 flex justify-center items-center font-login-page">
-        <div className="w-full max-w-150 p-5">
+      <FormHeader/>
+      <div className=" flex grow justify-center items-center font-login-page Login-Form-Container h-full bg-Page-background">
+        <div className="w-full max-w-150 p-10 ">
           <h1 className="text-3xl md:text-4xl text-Login-Heading mb-2 font-bold leading-tight">
             Create an Account
           </h1> 
@@ -98,7 +98,7 @@ const RightRegisterContent = ({ onNavigate }) => {
           <form className="box-border flex flex-col gap-1 w-full " onSubmit={handleSubmit(onSubmit)}>
 
             {/* Role Selection Tabs */}
-            <div className="relative grid grid-cols-3 place-items-center bg-role-box border p-2 border-role-box-border rounded-md mb-1">
+            <div className="relative grid grid-cols-3 place-items-center bg-role-box border p-2 border-role-box-border rounded-md mb-1 md:p-0">
               
               {/* ADMIN BUTTON */}
               <button 
@@ -167,6 +167,7 @@ const RightRegisterContent = ({ onNavigate }) => {
           </p>
         </div>
       </div>
+        
     </motion.div>
   );
 };
