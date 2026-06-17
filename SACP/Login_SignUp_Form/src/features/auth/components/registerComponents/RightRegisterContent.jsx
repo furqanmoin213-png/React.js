@@ -86,7 +86,7 @@ const RightRegisterContent = ({ onNavigate }) => {
     >
       <FormHeader/>
       <div className=" flex grow justify-center items-center font-login-page Login-Form-Container h-full bg-Page-background">
-        <div className="w-full max-w-150 p-10 ">
+        <div className="w-full max-w-150 p-5">
           <h1 className="text-3xl md:text-4xl text-Login-Heading mb-2 font-bold leading-tight">
             Create an Account
           </h1> 
