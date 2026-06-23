@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import {Eye, EyeClosed} from "lucide-react"
 import { useState } from "react";
 const PasswordInput = ({register, label}) => {
-    const [hide, setHide] = useState(false);
+    const [hide, setHide] = useState(true);
 
     function handleHide()
     {
@@ -17,11 +17,11 @@ const PasswordInput = ({register, label}) => {
       transition={{ duration: 0.5, ease: "easeIn" }}
       className="flex flex-col w-full gap-3 px-1"
     >
-      <div className="flex gap-2 items-center">
+      <div className="flex gap-2 items-center lg:text-xl">
         <label htmlFor="password" className="text-Login-Text">{label}</label>
         
       </div>
-<div className="flex justify-center items-center relative">
+<div className="flex justify-center items-center relative ">
 
       {/* 2. Transform the regular input into a motion.input */}
       <motion.input 

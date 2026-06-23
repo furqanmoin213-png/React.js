@@ -30,7 +30,7 @@ export default function Register({ onNavigate }) {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="grid grid-cols-1 lg:grid-cols-[60%_1fr] w-full max-h-screen place-items-center display-grid"
+      className="grid grid-cols-1 lg:grid-cols-[50%_1fr] w-full max-h-screen place-items-center display-grid"
     >
       {/* 2. Form panel wraps and slides smoothly in from the left */}
       <motion.div variants={itemVariantsLeft} className=" h-full w-full display-full">

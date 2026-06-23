@@ -1,10 +1,21 @@
-import Auth from "./features/auth/Auth"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import HomePage from "./features/landing-page/pages/HomePage";
+import AboutPage from "./features/landing-page/pages/AboutPage";
+import ContactPage from "./features/landing-page/pages/ContactPage";
+import Auth from "./features/auth/Auth";
+
 const App = () => {
   return (
-    <div className="bg-red-700">
-      <Auth/>
-    </div>
-  )
-}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/auth" element={<Auth />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
 export default App;

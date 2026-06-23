@@ -7,11 +7,12 @@ export const ImageContainer = () => {
       <img 
         src={Login_Illustration} 
         alt="Login Illustration" 
-        className="outline-none border-none w-full h-screen" 
+        className="outline-none border-none w-full h-screen " 
       />
     // </div>
   );
 };
+
 
 export const ImageContainer2 = () => {
   return (
@@ -19,7 +20,7 @@ export const ImageContainer2 = () => {
       <img 
         src={image} 
         alt="Register Illustration" 
-        className="outline-none border-none h-screen w-full bg-Page-background image2" 
+        className="outline-none border-none h-screen w-full " 
       />
     // </div>
   );
